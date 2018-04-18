@@ -13,14 +13,6 @@ var connection = mysql.createConnection({
 	database: 'genesiskyc'
 });
 
-var obcUrl = 'http://localhost:5100/bcsgw/rest/v1/transaction/invocation';
-var obcRequest = {
-	channel: 'kycaccess',
-	chaincode: 'genesiskyc',
-	chaincodeVer: 'v1.1.5'
-};
-
-
 // Add headers
 router.use(function (req, res, next) {
 
